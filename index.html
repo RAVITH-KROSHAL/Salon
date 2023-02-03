@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Salon Hawee</title>
+       <!--CSS-->
+        <link rel="stylesheet" href="./style.css ">
+        <!--<h1>Salon Hawee</h1>-->
+    </head>
+    <body>
+        <!--Navbar-->
+        
+     
+        <nav class="navbar">
+             
+
+            <img src="/image/uplogo rbg.png" alt="" class="logo">
+            <!--<h1 class="logo">SALON HAAWEE</h1>-->
+            <ul class="nav-links">
+                <li class="active"><a href="#"></a>Home</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Wadding</li>
+                <li><a href="#"></a>Saree</li>
+                <li><a href="#"></a>Hair</li>
+                <li><a href="#"></a>Facial</li>
+                <li><a href="#"></a>Makeup</li>
+                <li class="ctn"><a href="Contact">Contact</a></li>
+
+            </ul>
+            <img src="./image/menu.png" alt="" class="menu-btn">
+        </nav>
+       <section>
+        <img src="/image/b1.png" alt="" style="width: 100%">
+        <img src="/image/b2.png" alt="" style="width: 100%">
+        <img src="/image/b3.png" alt="" style="width: 100%">
+        <img src="/image/b4.png" alt="" style="width: 100%">
+        <img src="/image/b5.png" alt="" style="width: 100%">
+       </section>
+
+       <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
+
+
+<!--Banner-->
+<header>
+      
+            <div class="header-content">
+                <h2>Explore The Colour full Work</h2>
+                <div class="line"></div>
+                <h1>A WANDERFULL GIFT</h1>
+                <a href="#" class="ctn">Salon Haawee</a>
+            </div>
+        </header>
+
+       <!--Events-->
+       <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./image/a3.png" alt="">
+                <h4>KANDYAN BRIDAL</h4>
+                <p>BRIDAL DRESSING</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/a2.png" alt="">
+                <h4>TRADITIONAL BRIDAL</h4>
+                <p>BRIDAL DRESSING</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/w5.png" alt="">
+                <h4>BRIDAL DRESSING</h4>
+                <p>BRIDAL DRESSING</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/i34.png" alt="">
+                <h4>INDIAN BRIDAL</h4>
+                <p>BRIDAL DRESSING</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/s5.png" alt="">
+                <h4>INDIAN WEDDING SAREE</h4>
+                <p>BRIDAL DRESSING</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/t2.png" alt="">
+                <h4>TAMIL BRIDAL</h4>
+                <p>BRIDAL DRESSING</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/m4.png" alt="">
+                <h4>MUSLIM BRIDAL</h4>
+                <p>BRIDAL DRESSING</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+       </section>
+
+       <section class="explore">
+       <div class="explore-contect">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <P>A wedding is a ceremony where two people are united in marriage. Wedding traditions and customs vary greatly between cultures, ethnic groups, religions, countries, and social classes.</P>
+        <a href="#" class="ctn">Lean More</a>
+       </div>
+       </section>
+
+       <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOUER AND DESTINATION</h1>
+                <div class="line"></div>
+                <P>Another popular beauty treatment specific to the face is known as a facial. The perceived effects of a facial mask treatment include revitalization, healing, or refreshment of the skin. They may yield temporary benefits</P>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                <img src="./image/c1.png" alt="">
+                <img src="./image/c2.png" alt="">
+                <img src="./image/c3.png" alt="">
+                <img src="./image/c5.png" alt="">
+                </div>
+            </div>
+        </div>
+       </section>
+
+      <section class="footer">
+        <p> "U.S. Department of Labor | USAGov". www.usa.gov. Retrieved 2020-07-13.</p>
+        <p>This page was last edited on 23 December 2022</p>
+      </section>
+
+        <script>
+             const menuBtn = document.querySelector('.menu-btn');
+             const navlinks = document.querySelector('.nav-links');
+
+             menuBtn.addEventListener('click',()=>{
+             navlinks.classList.toggle('mobile-menu') 
+             })
+        </script>
+
+    </body>
+</html>
